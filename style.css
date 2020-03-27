@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: url(1.jpg);
+    background-repeat: no-repeat;
+}
+.container{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.survey-form{
+    margin: 20px;
+}
+.form-group{
+    padding: 25px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background: rgba(117, 117, 117,0.5);
+
+}
+
+.input{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    border: none;
+    background: rgba(219, 219, 219, 0.5);
+    padding: 5px;
+    border: 1px solid rgba(44, 43, 43, 0.5);
+}
+
+.input:focus{
+    outline: none;
+    background: rgba(117, 117, 117,0.5);
+}
+
+.radio-group{
+    background: rgba(219, 219, 219, 0.5);
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgba(44, 43, 43, 0.5);
+}
+
+.button{
+    width: 100%;
+    border-style: none;
+    padding:6px 20px;
+    background: rgba(219, 219, 219, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid rgba(44, 43, 43, 0.5);
+}
+
+.textarea{
+    background: rgba(219, 219, 219, 0.5);
+    width: 100%;
+    border: 1px solid rgba(44, 43, 43, 0.5);
+    text-align: center;
+    padding: 5px;
+}
+
+.button:hover{
+    background-color: rgba(117, 117, 117,0.5);
+}
+
+.checkbox{
+    width: 100%;
+    font-size: 16px;
+    margin-top: 5px;
+    background: rgba(219, 219, 219, 0.5);
+    padding: 5px;
+    border: 1px solid rgba(44, 43, 43, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.checkbox *{
+    padding: 5px;
+}
+
+@media screen and  (max-width:1000px){
+	.form-group{
+        width: 60vw;
+    }
+    .checkbox{
+        flex-direction: column;
+    }
+}
+@media screen and  (max-width:500px){
+	.form-group{
+        width: 90vw;
+    }
+    .checkbox{
+        flex-direction: column;
+    }
+}

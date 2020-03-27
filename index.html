@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="title" class="title">Survey Form</h1>
+        <p id="description">This is a simple survey form.</p>
+        
+        <form  id="survey-form" class="survey-form">
+            
+            <div class="form-group">
+                <label id="name-label" class="label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" class="input" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" class="label">Email</label>
+                <input type="email" name="email" id="email" placeholder="enter your email" class="input" required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" class="label">Number</label>
+                <input type="number" name="age" id="number" min="15" max="50" class="input" placeholder="enter your age">
+            </div>
+
+            <div class="form-group">
+                <label class="label">sex</label>
+                <div class="radio-group">
+                    <label>
+                        male
+                        <input type="radio" name="sex" id="radio" value="male">    
+                    </label>
+                    <label>
+                        Female
+                        <input type="radio" name="sex" id="radio" value="female">    
+                    </label>
+                    <label>
+                            Other
+                        <input type="radio" name="sex" id="radio" value="other">    
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group ">
+                <label id="status" class="label">Status</label>
+                <select name="status" id="dropdown" class="input">
+                    <option value="student">Student</option>
+                    <option value="job">Employee</option>
+                    <option value="learner">Self Employee</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label id="status" class="label">Hobbies</label>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="skill" value="singing">Singing
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skill" value="singer">Dancing
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skill" value="painter">painting
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skill" value="other">Other
+                    </label>
+                </div>
+            </div>
+            
+
+            <div class="form-group">
+                Address
+                <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your Address" class="textarea"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="button" id="submit">Submit</button>
+            </div>
+   
+        </form>
+    </div>
+</body>
+</html>
